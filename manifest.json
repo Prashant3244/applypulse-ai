@@ -1,0 +1,64 @@
+{
+  "manifest_version": 3,
+  "name": "ApplyPulse AI: Workday & ATS Job Application Copilot",
+  "version": "1.0.0",
+  "description": "1-click autofill for Workday, Greenhouse, Lever, & ATS job portals. Contextual AI answers for screening questions and job tracker.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.myworkdayjobs.com/*",
+        "*://*.workday.com/*",
+        "*://boards.greenhouse.io/*",
+        "*://jobs.lever.co/*",
+        "*://*.lever.co/*",
+        "*://*.bamboohr.com/*",
+        "*://*.smartrecruiters.com/*",
+        "*://*.taleo.net/*",
+        "*://*.ashbyhq.com/*",
+        "*://*.icims.com/*",
+        "*://*.jobvite.com/*",
+        "*://*.rippling.com/*",
+        "*://*.breezy.hr/*",
+        "*://*.applytojob.com/*",
+        "*://*.recruitee.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/*.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
