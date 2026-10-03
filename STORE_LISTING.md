@@ -5,46 +5,45 @@ Use the content below when publishing **ApplyPulse AI** to the [Chrome Developer
 ---
 
 ### 1. Title (Max 45 chars)
-`ApplyPulse AI: Workday & ATS Autofill Copilot`
+`ApplyPulse AI: ATS Job Application Copilot`
 
 ---
 
 ### 2. Short Description (Max 132 chars)
-`1-click autofill for Workday, Greenhouse, Lever, and ATS job portals. AI custom screening answers and built-in job tracker CRM.`
+`1-click autofill for career sites and ATS job portals. Contextual AI screening question answers and built-in job tracker CRM.`
 
 ---
 
 ### 3. Detailed Description
 
 ```markdown
-⚡ Stop wasting 30 minutes re-typing your resume into every single Workday, Greenhouse, and Lever application form. Land interviews 3x faster with ApplyPulse AI.
+⚡ Stop wasting 30 minutes re-typing your resume into every single corporate job application form. Land interviews faster with ApplyPulse AI.
 
-ApplyPulse AI is the ultimate, privacy-focused job application copilot built for engineers, designers, product managers, and job seekers worldwide.
+ApplyPulse AI is a privacy-focused job application copilot built for job seekers, software engineers, designers, product managers, and professionals.
 
-Unlike reckless "auto-apply bots" that spam companies with bad information and get your email blacklisted, ApplyPulse AI provides a seamless 1-click autofill with human-in-the-loop review.
+Unlike automated bots that spam companies with generic information and risk your reputation, ApplyPulse AI provides reliable, 1-click autofill with human-in-the-loop review.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 🔥 KEY CAPABILITIES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ✅ 1-CLICK UNIVERSAL ATS AUTOFILL
-Instantly fills personal info, contact details, addresses, education, work experience, and work authorization preferences across:
-• Workday (all *.myworkdayjobs.com portals)
-• Greenhouse (boards.greenhouse.io)
-• Lever (jobs.lever.co)
-• Ashby, BambooHR, SmartRecruiters, Taleo, iCIMS, and Rippling
+Instantly populates personal info, contact details, addresses, education, work experience, and work authorization preferences across:
+• Leading Applicant Tracking Systems (ATS)
+• Enterprise career portals and hiring platforms
+• Standard multi-step job application forms
 
 ✅ ✨ AI SCREENING QUESTION COPILOT
-Never get stuck on open-ended prompts like "Why do you want to work here?" or "Describe your technical background". Injects a 1-click AI Answer button directly above textareas that writes contextual, articulate 2-sentence responses tailored to your skills and the company.
+Never get stuck on open-ended prompts like "Why do you want to work here?" or "Describe your background". Adds a 1-click AI Answer helper directly above text fields that generates concise, articulate responses tailored to your profile and the role.
 
 ✅ BUILT-IN JOB TRACKER CRM & CSV EXPORT
-Save every applied position with one click directly from the floating HUD. Organize applications by status (Applied, Interviewing, Offer, Rejected) and export your entire pipeline into a clean CSV for Google Sheets or Excel.
+Save applied positions with one click directly from the floating interface. Organize applications by status (Applied, Interviewing, Offer, Rejected) and export your entire pipeline into a clean CSV for spreadsheets.
 
-✅ FRAMEWORK-NATIVE FORM ENGINE
-Engineered with synthetic event dispatchers to guarantee compatibility with modern Single Page Applications (React, Vue, Angular, and Workday custom DOMs).
+✅ MODERN FORM ENGINE
+Engineered with synthetic event dispatchers to ensure reliable compatibility with modern Single Page Applications and complex dynamic web forms.
 
 ✅ 100% LOCAL & PRIVACY-FIRST
-Your resume and personal details are stored strictly in your browser's local sync storage. No selling data to third parties.
+Your resume and personal details are stored strictly in your browser's local sync storage. No selling or sharing data with third parties.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 💰 PRICING & TIERS

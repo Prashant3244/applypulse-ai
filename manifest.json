@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "ApplyPulse AI: Workday & ATS Job Application Copilot",
-  "version": "1.0.0",
-  "description": "1-click autofill for Workday, Greenhouse, Lever, & ATS job portals. Contextual AI answers for screening questions and job tracker.",
+  "name": "ApplyPulse AI: ATS Job Application Copilot",
+  "version": "1.0.1",
+  "description": "1-click autofill for career sites and ATS job portals. Contextual AI answers for screening questions and job tracker.",
   "permissions": [
     "storage",
     "activeTab"
