@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApplyPulse AI | Universal Workday & ATS Job Application Copilot</title>
+  <meta name="description" content="1-click autofill for Workday, Greenhouse, Lever, and ATS job portals. Contextual AI answers for screening questions and built-in job tracker CRM.">
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card: #151f38;
+      --indigo: #6366f1;
+      --cyan: #38bdf8;
+      --emerald: #10b981;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background: var(--bg); color: var(--text); line-height: 1.6; }
+    .container { max-width: 1050px; margin: 0 auto; padding: 0 24px; }
+    
+    header { padding: 20px 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background: rgba(11, 17, 32, 0.95); backdrop-filter: blur(10px); z-index: 100; }
+    .brand { font-size: 20px; font-weight: 800; color: #fff; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    .brand-icon { background: var(--indigo); color: #fff; padding: 4px 8px; border-radius: 6px; font-size: 14px; }
+    .btn-cta { background: linear-gradient(135deg, var(--indigo), var(--cyan)); color: #fff; padding: 10px 22px; border-radius: 8px; font-weight: 700; text-decoration: none; border: none; cursor: pointer; transition: 0.2s transform; }
+    .btn-cta:hover { transform: translateY(-2px); }
+
+    .hero { padding: 60px 0 40px; text-align: center; }
+    .badge { display: inline-block; background: rgba(99, 102, 241, 0.15); color: var(--cyan); padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 20px; border: 1px solid rgba(99, 102, 241, 0.3); }
+    h1 { font-size: 42px; font-weight: 800; line-height: 1.2; margin-bottom: 18px; }
+    h1 span { background: linear-gradient(135deg, var(--cyan), var(--indigo)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { font-size: 18px; color: var(--muted); max-width: 680px; margin: 0 auto 30px; }
+
+    /* Interactive Simulator */
+    .sim-section { padding: 30px 0 60px; }
+    .sim-card { background: var(--card); border: 2px solid var(--indigo); border-radius: 16px; padding: 28px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); max-width: 820px; margin: 0 auto; }
+    .sim-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
+    .sim-actions { display: flex; gap: 10px; }
+    .btn-autofill { background: var(--emerald); color: #042f2e; border: none; padding: 8px 18px; border-radius: 6px; font-weight: 800; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px; }
+    .btn-ai { background: var(--indigo); color: #fff; border: none; padding: 8px 18px; border-radius: 6px; font-weight: 700; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px; }
+
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+    .form-field label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+    .form-field input, .form-field textarea { width: 100%; background: #0b1120; border: 1px solid var(--border); border-radius: 6px; color: #fff; padding: 10px 12px; font-size: 13px; transition: border-color 0.3s; }
+    .filled { border-color: var(--emerald) !important; background: rgba(16, 185, 129, 0.05) !important; }
+
+    /* Supported ATS platforms */
+    .ats-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 40px; }
+    .ats-tag { background: #1e293b; padding: 8px 16px; border-radius: 8px; font-size: 13px; color: var(--muted); border: 1px solid var(--border); }
+
+    footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; font-size: 13px; color: var(--muted); margin-top: 40px; }
+    
+    @media (max-width: 768px) {
+      h1 { font-size: 28px; }
+      .form-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="#" class="brand"><span class="brand-icon">⚡</span> ApplyPulse AI</a>
+      <a href="https://github.com/Prashant3244/applypulse-ai" target="_blank" class="btn-cta">Install on Chrome</a>
+    </header>
+
+    <section class="hero">
+      <div class="badge">🚀 Built for Job Seekers & Tech Candidates</div>
+      <h1>Stop Re-Typing Your Resume.<br><span>Apply 10x Faster</span> on Workday & ATS.</h1>
+      <p>1-click intelligent autofill for Workday, Greenhouse, Lever, and enterprise hiring portals. Generates contextual AI answers for open-ended screening questions.</p>
+    </section>
+
+    <!-- Interactive Live Simulator -->
+    <section class="sim-section">
+      <div class="sim-card">
+        <div class="sim-header">
+          <div>
+            <div style="font-size:16px; font-weight:700;">Simulated Job Portal Application</div>
+            <div style="font-size:12px; color:var(--cyan);">Stripe • Senior Software Engineer</div>
+          </div>
+          <div class="sim-actions">
+            <button class="btn-autofill" onclick="runAutofill()">⚡ 1-Click Autofill</button>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-field">
+            <label>First Name</label>
+            <input type="text" id="fn" placeholder="First Name">
+          </div>
+          <div class="form-field">
+            <label>Last Name</label>
+            <input type="text" id="ln" placeholder="Last Name">
+          </div>
+          <div class="form-field">
+            <label>Email Address</label>
+            <input type="email" id="email" placeholder="Email Address">
+          </div>
+          <div class="form-field">
+            <label>LinkedIn Profile URL</label>
+            <input type="text" id="li" placeholder="https://linkedin.com/in/...">
+          </div>
+        </div>
+
+        <div class="form-field" style="margin-bottom: 20px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+            <label>Why do you want to work at Stripe? (Screening Question)</label>
+            <button class="btn-ai" onclick="runAIAnswer()">✨ AI Draft Answer</button>
+          </div>
+          <textarea id="ai-answer" rows="3" placeholder="Click 'AI Draft Answer' to generate a contextual response..."></textarea>
+        </div>
+
+        <div style="text-align: center; margin-top: 14px;">
+          <span style="font-size: 13px; color: var(--emerald);" id="status-msg">💡 Click the buttons above to test live autofill!</span>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top: 40px;">
+        <h3 style="font-size:16px; color:var(--muted); margin-bottom: 12px;">Universal Compatibility Across Top ATS Platforms:</h3>
+        <div class="ats-grid">
+          <span class="ats-tag">Workday (*.myworkdayjobs.com)</span>
+          <span class="ats-tag">Greenhouse (boards.greenhouse.io)</span>
+          <span class="ats-tag">Lever (jobs.lever.co)</span>
+          <span class="ats-tag">Ashby (ashbyhq.com)</span>
+          <span class="ats-tag">BambooHR</span>
+          <span class="ats-tag">Taleo</span>
+          <span class="ats-tag">iCIMS</span>
+          <span class="ats-tag">SmartRecruiters</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 ApplyPulse AI • 100% Local In-Browser Storage • Zero Resume Tracking</p>
+    </footer>
+  </div>
+
+  <script>
+    function runAutofill() {
+      document.getElementById('fn').value = 'Alex';
+      document.getElementById('ln').value = 'Taylor';
+      document.getElementById('email').value = 'alex.taylor@example.com';
+      document.getElementById('li').value = 'https://linkedin.com/in/alextaylor-engineer';
+
+      ['fn', 'ln', 'email', 'li'].forEach(id => {
+        document.getElementById(id).classList.add('filled');
+      });
+
+      document.getElementById('status-msg').innerText = '✅ Form successfully autofilled in 12ms!';
+    }
+
+    function runAIAnswer() {
+      const box = document.getElementById('ai-answer');
+      box.value = "I am deeply inspired by Stripe's infrastructure reliability and developer-first philosophy. With extensive experience building distributed financial pipelines, I want to contribute to scaling mission-critical payment services that power global commerce.";
+      box.classList.add('filled');
+      document.getElementById('status-msg').innerText = '✨ Contextual screening answer generated based on role!';
+    }
+  </script>
+</body>
+</html>
